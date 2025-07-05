@@ -1,0 +1,1002 @@
+/* Universal Styles & Base Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* Refined Color Palette - Masculine & Professional */
+    --primary-color: #3f72af;
+    /* Deeper, more mature blue */
+    --secondary-color: #879ab1;
+    /* Muted steel grey */
+    --dark-bg: #1a2634;
+    /* Very dark, almost black-blue background */
+    --dark-card: #253342;
+    /* Dark blue-grey for cards */
+    --dark-text: #eef4f9;
+    /* Soft white for primary text */
+    --dark-text-secondary: #abc4d8;
+    /* Muted light blue for secondary text */
+    --gradient-start: #16202c;
+    /* Darker gradient start */
+    --gradient-end: #0e161f;
+    /* Even deeper gradient end */
+    --border-color: rgba(255, 255, 255, 0.07);
+    /* Very subtle border */
+    --hover-effect: rgba(255, 255, 255, 0.03);
+    /* Extremely subtle hover effect */
+    --shadow-dark: rgba(0, 0, 0, 0.5);
+    /* Stronger, deeper shadow */
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    /* Lighter shadow for subtle elements */
+}
+
+/* Light mode (optional, for future implementation) */
+body.light-mode {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --dark-bg: #ffffff;
+    --dark-card: #f8f9fa;
+    --dark-text: #343a40;
+    --dark-text-secondary: #6c757d;
+    --gradient-start: #e0e6ed;
+    --gradient-end: #ffffff;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --hover-effect: rgba(0, 0, 0, 0.03);
+    --shadow-dark: rgba(0, 0, 0, 0.15);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll from animations */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5b92e5;
+    /* Slightly brighter primary on hover */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Background Elements (Subtle & Hypnotic) --- */
+.background-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+}
+
+.background-elements span {
+    position: absolute;
+    background: rgba(63, 114, 175, 0.08);
+    /* Primary color with high transparency */
+    border-radius: 50%;
+    animation: moveShapes 25s infinite linear;
+    /* Slower, continuous linear animation */
+    box-shadow: 0 0 12px rgba(63, 114, 175, 0.15);
+    /* Subtler glow */
+}
+
+/* Adjusted sizes, positions and delays for more fluid movement */
+.background-elements span:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    width: 85px;
+    height: 85px;
+    animation-delay: 0s;
+}
+
+.background-elements span:nth-child(2) {
+    top: 75%;
+    left: 90%;
+    width: 130px;
+    height: 130px;
+    animation-delay: 3s;
+}
+
+.background-elements span:nth-child(3) {
+    top: 25%;
+    left: 45%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 6s;
+}
+
+.background-elements span:nth-child(4) {
+    top: 88%;
+    left: 20%;
+    width: 105px;
+    height: 105px;
+    animation-delay: 9s;
+}
+
+.background-elements span:nth-child(5) {
+    top: 40%;
+    left: 78%;
+    width: 95px;
+    height: 95px;
+    animation-delay: 12s;
+}
+
+.background-elements span:nth-child(6) {
+    top: 55%;
+    left: 18%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 1.5s;
+}
+
+.background-elements span:nth-child(7) {
+    top: 8%;
+    left: 85%;
+    width: 115px;
+    height: 115px;
+    animation-delay: 4.5s;
+}
+
+.background-elements span:nth-child(8) {
+    top: 82%;
+    left: 55%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 7.5s;
+}
+
+.background-elements span:nth-child(9) {
+    top: 32%;
+    left: 12%;
+    width: 140px;
+    height: 140px;
+    animation-delay: 10.5s;
+}
+
+.background-elements span:nth-child(10) {
+    top: 62%;
+    left: 65%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 13.5s;
+}
+
+.background-elements span:nth-child(11) {
+    top: 20%;
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+}
+
+.background-elements span:nth-child(12) {
+    top: 70%;
+    left: 8%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5s;
+}
+
+.background-elements span:nth-child(13) {
+    top: 15%;
+    left: 28%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 8s;
+}
+
+.background-elements span:nth-child(14) {
+    top: 85%;
+    left: 70%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 11s;
+}
+
+.background-elements span:nth-child(15) {
+    top: 48%;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 14s;
+}
+
+.background-elements span:nth-child(16) {
+    top: 50%;
+    left: 92%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2.5s;
+}
+
+.background-elements span:nth-child(17) {
+    top: 12%;
+    left: 50%;
+    width: 105px;
+    height: 105px;
+    animation-delay: 5.5s;
+}
+
+.background-elements span:nth-child(18) {
+    top: 90%;
+    left: 75%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 8.5s;
+}
+
+.background-elements span:nth-child(19) {
+    top: 5%;
+    left: 10%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 11.5s;
+}
+
+.background-elements span:nth-child(20) {
+    top: 60%;
+    left: 45%;
+    width: 105px;
+    height: 105px;
+    animation-delay: 14.5s;
+}
+
+@keyframes moveShapes {
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: translate(15vw, -10vh) scale(1.02) rotate(90deg);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: translate(0, 15vh) scale(1.05) rotate(180deg);
+        opacity: 0.7;
+    }
+
+    75% {
+        transform: translate(-10vw, -10vh) scale(1.03) rotate(270deg);
+        opacity: 0.65;
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1) rotate(360deg);
+        opacity: 0.6;
+    }
+}
+
+
+/* --- Header --- */
+.main-header {
+    background-color: rgba(26, 38, 52, 0.98);
+    /* Almost opaque */
+    backdrop-filter: blur(15px);
+    /* Stronger, smoother blur */
+    padding: 1.1rem 0;
+    /* Slightly more padding */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 5px 20px var(--shadow-dark);
+    /* Deeper shadow */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 2rem;
+    /* Clearer logo */
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.2rem;
+    /* Larger icon */
+    cursor: pointer;
+    color: var(--dark-text);
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: var(--primary-color);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    /* More space */
+    align-items: center;
+}
+
+.nav-links li a {
+    color: var(--dark-text-secondary);
+    font-weight: 600;
+    padding: 0.7rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+/* Header qismidagi belgilarni (iconlarni) yashirish */
+.nav-links li a i {
+    display: none;
+    /* Iconlarni to'liq yashiradi */
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    bottom: -6px;
+    /* Slightly lower */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-out, background-color 0.3s ease;
+    /* Smoother transition */
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: var(--dark-text);
+    /* Brighter for active/hover */
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    padding: 0.9rem 1.8rem;
+    /* Fine-tuned padding */
+    border-radius: 8px;
+    /* Consistent rounding */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(63, 114, 175, 0.45);
+    /* Enhanced shadow */
+}
+
+.contact-btn:hover {
+    background-color: #5b92e5;
+    transform: translateY(-4px);
+    /* More pronounced lift */
+    box-shadow: 0 9px 25px rgba(63, 114, 175, 0.6);
+}
+
+.contact-btn::after {
+    display: none;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    /* Adjusted for header height */
+    padding: 90px 0;
+    /* Increased padding */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-home {
+    background: radial-gradient(circle at top left, var(--dark-bg) 0%, var(--gradient-end) 80%);
+    /* Softer gradient */
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    /* Wider gap */
+    align-items: center;
+}
+
+.hero-text .greeting {
+    font-size: 1.7rem;
+    /* More impactful */
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    opacity: 0;
+    text-shadow: 0 0 7px rgba(63, 114, 175, 0.25);
+}
+
+.hero-text h1 {
+    font-size: 4.2rem;
+    /* Larger and bolder */
+    margin-bottom: 30px;
+    line-height: 1.2;
+    color: var(--dark-text);
+    opacity: 0;
+    font-weight: 700;
+    /* Ensure strong boldness */
+}
+
+.hero-text h1 strong {
+    color: var(--primary-color);
+    font-weight: 800;
+    /* Even bolder for emphasis */
+}
+
+.hero-text .job {
+    font-size: 2.2rem;
+    /* More prominent */
+    color: var(--dark-text-secondary);
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.hero-text .job span {
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.hero-text .btn {
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    /* More generous padding */
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Smoother button transitions */
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 7px 20px rgba(63, 114, 175, 0.5);
+    /* Deeper shadow */
+}
+
+.primary-btn:hover {
+    background-color: #5b92e5;
+    transform: translateY(-5px);
+    /* Stronger lift */
+    box-shadow: 0 12px 30px rgba(63, 114, 175, 0.7);
+}
+
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    gap: 2rem;
+    /* Wider gap */
+    opacity: 0;
+}
+
+.social-links a {
+    font-size: 2.2rem;
+    /* Larger icons */
+    color: var(--dark-text-secondary);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-7px) scale(1.2);
+    /* More pronounced lift and scale */
+}
+
+.hero-image {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+}
+
+/* Rasmni harakatlanmaydigan qilish */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50% 50% 50% 50%;
+    border: 12px solid rgba(63, 114, 175, 0.25);
+    /* Thicker, slightly more transparent border */
+    box-shadow: 0 15px 40px var(--shadow-dark);
+    /* Stronger shadow */
+    /* animation: floatImage 4.5s ease-in-out infinite; */
+    /* Bu qatorni o'chirish yoki commentga olish */
+}
+
+/* @keyframes floatImage { */
+/* 0% { transform: translateY(0); } */
+/* 50% { transform: translateY(-28px); } */
+/* 100% { transform: translateY(0); } */
+/* } */
+
+/* --- Preview Sections (About) --- */
+.preview {
+    padding: 100px 0;
+    /* More generous padding */
+    text-align: center;
+    background-color: var(--dark-card);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.preview h2 {
+    font-size: 3rem;
+    /* Larger heading */
+    margin-bottom: 35px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(63, 114, 175, 0.3);
+    font-weight: 700;
+}
+
+.preview p {
+    font-size: 1.3rem;
+    /* Larger, more readable text */
+    color: var(--dark-text-secondary);
+    max-width: 900px;
+    /* Wider paragraph */
+    margin: 0 auto 45px;
+    line-height: 1.9;
+    /* Improved readability */
+}
+
+.preview p strong {
+    color: var(--dark-text);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 1.1rem 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    border-radius: 8px;
+    font-size: 1.15rem;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 7px 20px rgba(63, 114, 175, 0.5);
+}
+
+/* --- Counter Section --- */
+.counter-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--dark-bg);
+}
+
+.counter-section h2 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: var(--dark-text);
+    font-weight: 700;
+}
+
+.counters {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    /* Wider gap */
+    flex-wrap: wrap;
+}
+
+.counter-box {
+    background-color: var(--dark-card);
+    padding: 40px 50px;
+    /* More generous padding */
+    border-radius: 18px;
+    /* More rounded */
+    box-shadow: 0 12px 35px var(--shadow-dark);
+    /* Deeper shadow */
+    width: 320px;
+    /* Wider box */
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+    /* Smoother transitions */
+    position: relative;
+    overflow: hidden;
+}
+
+.counter-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(63, 114, 175, 0.2) 0%, transparent 70%);
+    /* Stronger primary glow */
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    /* Slower, smoother reveal */
+    z-index: 0;
+}
+
+.counter-box:hover::before {
+    opacity: 1;
+}
+
+.counter-box:hover {
+    transform: translateY(-15px) scale(1.04);
+    /* More pronounced lift and slight scale */
+    box-shadow: 0 25px 60px var(--shadow-dark);
+    /* Even stronger shadow */
+}
+
+.counter-box h3 {
+    font-size: 4.5rem;
+    /* Larger, more impactful count */
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 800;
+    /* Extra bold */
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 12px rgba(63, 114, 175, 0.4);
+}
+
+.counter-box p {
+    font-size: 1.3rem;
+    /* More readable text */
+    color: var(--dark-text-secondary);
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Call To Action (CTA) --- */
+.cta {
+    padding: 120px 0;
+    /* More spacious */
+    text-align: center;
+    background: linear-gradient(90deg, var(--dark-card), var(--primary-color));
+    color: #fff;
+    margin-top: 70px;
+    /* More separation */
+    border-radius: 25px;
+    /* More rounded */
+    margin: 70px auto;
+    max-width: 1100px;
+    /* Wider CTA */
+    box-shadow: 0 18px 60px var(--shadow-dark);
+    /* Very deep shadow */
+    transform: translateY(40px);
+    /* Larger initial translateY */
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), opacity 1s cubic-bezier(0.23, 1, 0.32, 1);
+    /* Slower, more impactful animation */
+}
+
+.cta.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cta h2 {
+    font-size: 3.8rem;
+    /* Larger, more commanding */
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cta p {
+    font-size: 1.45rem;
+    /* Larger, very readable */
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.98);
+    /* Almost pure white */
+}
+
+.cta-btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 1.4rem 3.5rem;
+    /* Larger, more prominent button */
+    font-size: 1.3rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+    background-color: #ebf3fa;
+    /* Slightly off-white for hover */
+    transform: translateY(-6px);
+    /* Stronger lift */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #111a24;
+    /* Even darker, sophisticated footer */
+    color: var(--dark-text-secondary);
+    text-align: center;
+    padding: 40px 0;
+    /* More padding */
+    font-size: 1.05rem;
+    border-top: 1px solid var(--border-color);
+}
+
+footer strong {
+    color: var(--dark-text);
+}
+
+.footer .socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+footer .socials a {
+    color: var(--dark-text-secondary);
+    font-size: 1.9rem;
+    /* Larger icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+    /* More pronounced lift */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 3rem;
+    }
+
+    .hero-image img {
+        max-width: 70%;
+        /* Adjust image size */
+    }
+
+    .hero-text h1 {
+        font-size: 3.8rem;
+    }
+
+    .hero-text .job {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .counter-box {
+        width: 280px;
+        padding: 35px 40px;
+    }
+
+    .cta h2 {
+        font-size: 3.2rem;
+    }
+
+    .cta p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(26, 38, 52, 0.99);
+        /* Almost fully opaque for mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 30px 0;
+        border-top: 1px solid var(--border-color);
+        box-shadow: 0 5px 25px var(--shadow-dark);
+        animation: slideDown 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        /* Smoother slide down */
+    }
+
+    .menu-toggle:checked+.menu-icon+nav .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 1.4rem 0;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
+
+    .contact-btn {
+        margin-top: 25px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-40px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text .job {
+        font-size: 1.6rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .preview h2,
+    .counter-section h2,
+    .cta h2 {
+        font-size: 2.8rem;
+    }
+
+    .counters {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .counter-box {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .cta {
+        padding: 80px 30px;
+        margin: 50px auto;
+    }
+
+    .cta-btn {
+        padding: 1.2rem 2.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.7rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-text .job {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .social-links a {
+        font-size: 1.7rem;
+    }
+
+    .preview p {
+        font-size: 1.15rem;
+    }
+
+    .counter-box h3 {
+        font-size: 3.8rem;
+    }
+
+    .counter-box p {
+        font-size: 1.1rem;
+    }
+
+    .cta h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta p {
+        font-size: 1.15rem;
+    }
+}

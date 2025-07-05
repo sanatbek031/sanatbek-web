@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sanatbek Qodirov — Fullstack Web Dasturchi. HTML, CSS, JS, Node.js, MySQL asosida sifatli va zamonaviy web saytlar yarataman.">
+    <meta name="keywords"
+        content="Sanatbek, Web Dasturchi, Fullstack, Portfolio, Web Development, HTML, CSS, JavaScript, Node.js, MySQL">
+    <meta name="author" content="Sanatbek Qodirov">
+
+    <title>Sanatbek Web | Bog‘lanish</title>
+
+    <link rel="icon" href="./rasm/image.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="dark-mode">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Sanatbek<span>.Web</span></a>
+            </div>
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> Men haqimda</a></li>
+                    <li><a href="services.html"><i class="fas fa-tools"></i> Xizmatlar</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html" class="active contact-btn"><i class="fas fa-envelope"></i> Bog‘lanish</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" data-aos="fade-down">
+        <div class="container">
+            <h1>Menga murojaat qiling</h1>
+            <p>Sizning loyihangizni muhokama qilishdan mamnunman!</p>
+        </div>
+    </section>
+
+    <section class="contact-content section-padding">
+        <div class="container contact-grid">
+            <div class="contact-form-container" data-aos="fade-right">
+                <h2>Xabar yuborish</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ismingiz:</label>
+                        <input type="text" id="name" name="name" required placeholder="To'liq ismingizni kiriting">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Sizning e-mailingiz">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Mavzu:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Mavzuni kiriting">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Xabar:</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Xabaringizni yozing..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Xabar yuborish</button>
+                </form>
+            </div>
+            <div class="contact-info" data-aos="fade-left">
+                <h2>Aloqa ma'lumotlari</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>sanatbek@example.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+998 XX XXX XX XX</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Toshkent, O'zbekiston</p>
+                </div>
+                <div class="social-contact-links">
+                    <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                            class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 <strong>Sanatbek.uz</strong>. Barcha huquqlar himoyalangan.</p>
+        <div class="socials">
+            <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        ScrollReveal().reveal('.page-header h1, .page-header p', { delay: 200, distance: '30px', duration: 700, origin: 'top' });
+        ScrollReveal().reveal('.contact-form-container', { delay: 300, distance: '50px', duration: 800, origin: 'left' });
+        ScrollReveal().reveal('.contact-info', { delay: 400, distance: '50px', duration: 800, origin: 'right' });
+    </script>
+</body>
+
+</html>

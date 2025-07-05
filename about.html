@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sanatbek Qodirov — Fullstack Web Dasturchi. HTML, CSS, JS, Node.js, MySQL asosida sifatli va zamonaviy web saytlar yarataman.">
+    <meta name="keywords"
+        content="Sanatbek, Web Dasturchi, Fullstack, Portfolio, Web Development, HTML, CSS, JavaScript, Node.js, MySQL">
+    <meta name="author" content="Sanatbek Qodirov">
+
+    <title>Sanatbek Web | Men haqimda</title>
+
+    <link rel="icon" href="./rasm/image.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="dark-mode">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Sanatbek<span>.Web</span></a>
+            </div>
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                    <li><a href="about.html" class="active"><i class="fas fa-user"></i> Men haqimda</a></li>
+                    <li><a href="services.html"><i class="fas fa-tools"></i> Xizmatlar</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Bog‘lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" data-aos="fade-down">
+        <div class="container">
+            <h1>Men haqimda</h1>
+            <p>Mening hikoyam, ko'nikmalarim va qadriyatlarim.</p>
+        </div>
+    </section>
+
+    <section class="about-content section-padding">
+        <div class="container about-grid">
+            <div class="about-image" data-aos="fade-right">
+                <img src="./rasm/sanatbek_about.jpg" alt="Sanatbek Qodirov" loading="lazy">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2>Salom, Men Sanatbek Qodirov</h2>
+                <h3>Fullstack Web Dasturchi</h3>
+                <p>
+                    Men zamonaviy va samarali veb-saytlar yaratishga ishtiyoqi baland **Fullstack Web Dasturchiman**.
+                    Asosiy faoliyatim **HTML, CSS, JavaScript, Node.js va MySQL** texnologiyalari orqali
+                    foydalanuvchilar uchun qulay va vizual jihatdan jozibador veb-ilovalarni ishlab chiqishdan iborat.
+                    Har bir loyihamda **minimalizm, optimallash va yuqori sifat**ga e'tibor qarataman.
+                </p>
+                <p>
+                    O'z ishimda doimiy o'rganish va rivojlanishga intilaman. Yangi texnologiyalarni o'zlashtirish, qiyin
+                    muammolarga yechim topish va mijozlarimning biznes maqsadlariga erishishlariga yordam berish –
+                    mening asosiy motivatsiyam. Sizning loyihangizga yordam berishga tayyorman!
+                </p>
+                <div class="skills-list">
+                    <h4>Mening ko'nikmalarim:</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> HTML5 & CSS3 (Flexbox, Grid)</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript (ES6+)</li>
+                        <li><i class="fas fa-check-circle"></i> Node.js & Express.js</li>
+                        <li><i class="fas fa-check-circle"></i> MySQL & PostgreSQL</li>
+                        <li><i class="fas fa-check-circle"></i> Git & GitHub</li>
+                        <li><i class="fas fa-check-circle"></i> Responsiv Dizayn</li>
+                    </ul>
+                </div>
+                <a href="contact.html" class="btn small">Bog‘lanish</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section" data-aos="zoom-in">
+        <div class="container">
+            <h2>Statistikalar</h2>
+            <div class="counters">
+                <div class="counter-box">
+                    <h3 id="projects">0</h3>
+                    <p>Loyihalar</p>
+                </div>
+                <div class="counter-box">
+                    <h3 id="clients">0</h3>
+                    <p>Mamnun mijozlar</p>
+                </div>
+                <div class="counter-box">
+                    <h3 id="experience">0</h3>
+                    <p>Yillik tajriba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta" data-aos="fade-up">
+        <h2>Sizga ham sayt kerakmi?</h2>
+        <p>Yaxshi dizayn va kuchli backend birlashtirilgan loyiha kerak bo‘lsa — albatta bog‘laning!</p>
+        <a href="contact.html" class="btn">📩 Murojaat qilish</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 <strong>Sanatbek.uz</strong>. Barcha huquqlar himoyalangan.</p>
+        <div class="socials">
+            <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        ScrollReveal().reveal('.page-header h1, .page-header p', { delay: 200, distance: '30px', duration: 700, origin: 'top' });
+        ScrollReveal().reveal('.about-image', { delay: 300, distance: '50px', duration: 800, origin: 'left' });
+        ScrollReveal().reveal('.about-text', { delay: 400, distance: '50px', duration: 800, origin: 'right' });
+        ScrollReveal().reveal('.skills-list', { delay: 500, distance: '30px', duration: 700, origin: 'bottom' });
+        ScrollReveal().reveal('.counter-box', { delay: 300, interval: 100, distance: '30px', duration: 700, origin: 'bottom', easing: 'ease-out' });
+        ScrollReveal().reveal('.cta', { delay: 400, distance: '30px', duration: 700, origin: 'bottom' });
+
+
+        let count = (id, end) => {
+            let el = document.getElementById(id);
+            let start = 0;
+            let step = Math.ceil(end / 100);
+            let interval = setInterval(() => {
+                start += step;
+                if (start >= end) {
+                    el.textContent = end;
+                    clearInterval(interval);
+                } else {
+                    el.textContent = start;
+                }
+            }, 30);
+        };
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const counterSection = document.querySelector('.counter-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        count("projects", 36);
+                        count("clients", 18);
+                        count("experience", 3);
+                        observer.unobserve(counterSection);
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+            observer.observe(counterSection);
+        });
+    </script>
+</body>
+
+</html>

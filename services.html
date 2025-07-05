@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sanatbek Qodirov — Fullstack Web Dasturchi. HTML, CSS, JS, Node.js, MySQL asosida sifatli va zamonaviy web saytlar yarataman.">
+    <meta name="keywords"
+        content="Sanatbek, Web Dasturchi, Fullstack, Portfolio, Web Development, HTML, CSS, JavaScript, Node.js, MySQL">
+    <meta name="author" content="Sanatbek Qodirov">
+
+    <title>Sanatbek Web | Xizmatlar</title>
+
+    <link rel="icon" href="./rasm/image.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="dark-mode">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Sanatbek<span>.Web</span></a>
+            </div>
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Bosh sahifa</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> Men haqimda</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-tools"></i> Xizmatlar</a></li>
+                    <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="contact.html" class="contact-btn"><i class="fas fa-envelope"></i> Bog‘lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header" data-aos="fade-down">
+        <div class="container">
+            <h1>Mening xizmatlarim</h1>
+            <p>Sizning biznesingiz uchun eng yaxshi veb yechimlar.</p>
+        </div>
+    </section>
+
+    <section class="services-content section-padding">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Veb-sayt yaratish</h3>
+                    <p>Zamonaviy, responsiv va tezkor korporativ, landing page yoki shaxsiy veb-saytlar ishlab chiqish.
+                    </p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend Dasturlash</h3>
+                    <p>Kuchli va ishonchli server qismi (API, baza bilan ishlash) yaratish, Node.js va MySQL asosida.
+                    </p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobil adaptatsiya</h3>
+                    <p>Veb-saytlarni barcha turdagi qurilmalarga (telefon, planshet) moslashtirish va optimallashtirish.
+                    </p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-brush"></i>
+                    <h3>UI/UX Konsalting</h3>
+                    <p>Foydalanuvchi interfeysi va tajribasini yaxshilash bo'yicha maslahatlar va takliflar.</p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-bug"></i>
+                    <h3>Qo'llab-quvvatlash & Xizmat ko'rsatish</h3>
+                    <p>Tayyor loyihalarni texnik qo'llab-quvvatlash, xatolarni tuzatish va yangilash xizmatlari.</p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Server va joylashtirish</h3>
+                    <p>Veb-saytlarni serverga joylashtirish (hosting) va domen nomini ulashda yordam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" data-aos="fade-up">
+        <h2>Sizga ham sayt kerakmi?</h2>
+        <p>Yaxshi dizayn va kuchli backend birlashtirilgan loyiha kerak bo‘lsa — albatbat bog‘laning!</p>
+        <a href="contact.html" class="btn">📩 Murojaat qilish</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 <strong>Sanatbek.uz</strong>. Barcha huquqlar himoyalangan.</p>
+        <div class="socials">
+            <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        // Faqat services sahifasi uchun kerakli animatsiyalar
+        ScrollReveal().reveal('.page-header h1, .page-header p', { delay: 200, distance: '30px', duration: 700, origin: 'top' });
+        ScrollReveal().reveal('.service-box', { delay: 300, interval: 100, distance: '40px', duration: 800, origin: 'bottom', easing: 'ease-out' });
+        ScrollReveal().reveal('.cta', { delay: 400, distance: '30px', duration: 700, origin: 'bottom' });
+    </script>
+</body>
+
+</html>

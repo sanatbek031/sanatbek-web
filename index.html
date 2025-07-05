@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sanatbek Qodirov — Fullstack Web Dasturchi. HTML, CSS, JS, Node.js, MySQL asosida sifatli va zamonaviy web saytlar yarataman.">
+    <meta name="keywords"
+        content="Sanatbek, Web Dasturchi, Fullstack, Portfolio, Web Development, HTML, CSS, JavaScript, Node.js, MySQL">
+    <meta name="author" content="Sanatbek Qodirov">
+
+    <title>Sanatbek Web | Shaxsiy Portfolio</title>
+
+    <link rel="icon" href="./rasm/image.png" type="image/png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+
+<body class="dark-mode">
+
+    <div class="background-elements">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Sanatbek<span>.Web</span></a>
+            </div>
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Bosh sahifa</a></li>
+                    <li><a href="about.html">Men haqimda</a></li>
+                    <li><a href="services.html">Xizmatlar</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="contact-btn">Bog‘lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-home" data-aos="fade-up" data-aos-duration="1200">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="greeting" data-aos="fade-right" data-aos-delay="200">Assalomu alaykum,</p>
+                <h1 data-aos="fade-right" data-aos-delay="400">men <strong>Sanatbek Qodirov</strong></h1>
+                <p class="job" data-aos="fade-right" data-aos-delay="600">Fullstack Web Dasturchi <br><span>HTML, CSS,
+                        JS, Node.js, MySQL</span></p>
+                <a href="portfolio.html" class="btn primary-btn" data-aos="fade-up" data-aos-delay="800">📂 Ishlarimni
+                    ko‘rish</a>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="1000">
+                    <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                            class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/sanatbek_3106" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="./rasm/sanatbek.jpg" alt="Sanatbek Qodirov rasmi" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="preview about-preview" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Men haqimda qisqacha</h2>
+            <p>Men zamonaviy texnologiyalar asosida veb-saytlar yarataman. Har bir loyihamda **minimalizm, samaradorlik
+                va foydalanuvchi qulayligini** birinchi o‘ringa qo‘yaman. Murakkab g‘oyalarni oddiy va ishonchli
+                yechimlarga aylantirish menga zavq bag‘ishlaydi.</p>
+            <a href="about.html" class="btn secondary-btn">Men haqimda batafsil <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="counter-section" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Mening yutuqlarim</h2>
+            <div class="counters">
+                <div class="counter-box" data-aos="zoom-in" data-aos-delay="100">
+                    <h3 id="projects">0</h3>
+                    <p>Muvaffaqiyatli loyihalar</p>
+                </div>
+                <div class="counter-box" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 id="clients">0</h3>
+                    <p>Mamnun mijozlar</p>
+                </div>
+                <div class="counter-box" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 id="experience">0</h3>
+                    <p>Yillik tajriba</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Sizga ham sayt kerakmi?</h2>
+            <p>Yaxshi dizayn va kuchli backend birlashtirilgan, biznesingizni yangi bosqichga olib chiqadigan loyiha
+                kerak bo‘lsa — albatta bog‘laning!</p>
+            <a href="contact.html" class="btn cta-btn">📩 Murojaat qilish</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> <strong>Sanatbek.uz</strong>. Barcha huquqlar himoyalangan.</p>
+        <div class="socials">
+            <a href="https://t.me/yourtelegram" target="_blank" aria-label="Telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://instagram.com/yourinstagram" target="_blank" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS (Animate On Scroll) kutubxonasini ishga tushirish
+        AOS.init({
+            once: true, // Animatsiyalar faqat bir marta ishga tushsin
+            mirror: false, // Scroll qilinganda qayta animatsiya bo'lmasin
+            offset: 100, // Element ko'rinishdan oldin animatsiya boshlansin
+        });
+
+        // ScrollReveal kutubxonasi yordamida elementlarga animatsiyalar qo'shish
+        ScrollReveal().reveal('.hero-text', { delay: 400, distance: '60px', duration: 900, origin: 'left', easing: 'ease-out' });
+        ScrollReveal().reveal('.hero-image', { delay: 500, distance: '60px', duration: 900, origin: 'right', easing: 'ease-out' });
+        ScrollReveal().reveal('.preview', { delay: 400, distance: '40px', duration: 800, origin: 'bottom', easing: 'ease-out' });
+        ScrollReveal().reveal('.counter-box', { delay: 300, interval: 100, distance: '30px', duration: 700, origin: 'bottom', easing: 'ease-out' });
+        ScrollReveal().reveal('.cta', { delay: 400, distance: '30px', duration: 700, origin: 'bottom', easing: 'ease-out' });
+
+        // Statistikalar hisoblagich funksiyasi
+        let count = (id, end) => {
+            let el = document.getElementById(id);
+            let start = 0;
+            let step = Math.ceil(end / 100); // Tezlikni sozlash
+            let interval = setInterval(() => {
+                start += step;
+                if (start >= end) {
+                    el.textContent = end;
+                    clearInterval(interval);
+                } else {
+                    el.textContent = start;
+                }
+            }, 30); // Har 30ms da yangilash
+        };
+
+        // Sahifa yuklanganda yoki hisoblagich qismi ko'rinish maydoniga kirganda
+        window.addEventListener("DOMContentLoaded", () => {
+            // Footerga avtomatik yilni qo'shish
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Intersection Observer yordamida hisoblagichni ishga tushirish
+            const counterSection = document.querySelector('.counter-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        count("projects", 36); // Loyihalar soni
+                        count("clients", 18);  // Mijozlar soni
+                        count("experience", 3); // Tajriba yillari
+                        observer.unobserve(counterSection); // Bir marta ishga tushgach, kuzatishni to'xtatish
+                    }
+                });
+            }, {
+                threshold: 0.5 // Elementning 50% ko'ringanda ishga tushadi
+            });
+            observer.observe(counterSection);
+
+            // CTA animatsiyasini Intersection Observer yordamida boshqarish
+            const ctaSection = document.querySelector('.cta');
+            const ctaObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        ctaSection.classList.add('visible'); // Ko'ringanda 'visible' klassini qo'shish
+                        ctaObserver.unobserve(ctaSection); // Bir marta ishga tushgach, kuzatishni to'xtatish
+                    }
+                });
+            }, {
+                threshold: 0.4 // Elementning 40% ko'ringanda ishga tushadi
+            });
+            ctaObserver.observe(ctaSection);
+        });
+    </script>
+</body>
+
+</html>
